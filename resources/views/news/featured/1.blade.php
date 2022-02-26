@@ -49,7 +49,7 @@
                     <a class="link-secondary" href="#">Subscribe</a>
                 </div>
                 <div class="col-4 text-center">
-                    <a class="blog-header-logo text-dark" href="#">Large</a>
+                    <a class="blog-header-logo text-dark" href="/">Detail</a>
                 </div>
                 <div class="col-4 d-flex justify-content-end align-items-center">
                     <a class="link-secondary" href="#" aria-label="Search">
@@ -89,7 +89,7 @@
             <div class="col-md-6 px-0">
                 <h1 class="display-4 fst-italic"><?php echo $title ?></h1>
                 <p class="lead my-3"><?php echo $subtitle ?></p>
-                <p class="lead mb-0"><a href="/news/hero-post-detail" class="text-white fw-bold">Continue reading...</a></p>
+                <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a></p>
             </div>
         </div>
 
@@ -99,10 +99,10 @@
                     class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">
                         <strong class="d-inline-block mb-2 text-primary">World</strong>
-                        <h3 class="mb-0"><?php echo $featured_title_1 ?></h3>
+                        <h3 class="mb-0"><?php echo $featured_title ?></h3>
                         <div class="mb-1 text-muted">Nov 12</div>
-                        <p class="card-text mb-auto"><?php echo $featured_desc_1 ?></p>
-                        <a href="/news/featured/1" class="stretched-link">Continue reading</a>
+                        <p class="card-text mb-auto"><?php echo $featured_desc ?></p>
+                        <a href="#" class="stretched-link">Continue reading</a>
                     </div>
                     <div class="col-auto d-none d-lg-block">
                         <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
@@ -121,10 +121,10 @@
                     class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">
                         <strong class="d-inline-block mb-2 text-success">Design</strong>
-                        <h3 class="mb-0"><?php echo $featured_title_2 ?></h3>
+                        <h3 class="mb-0"><?php echo $featured_title ?></h3>
                         <div class="mb-1 text-muted">Nov 11</div>
-                        <p class="mb-auto"><?php echo $featured_desc_2 ?></p>
-                        <a href="/news/featured/2" class="stretched-link">Continue reading</a>
+                        <p class="mb-auto"><?php echo $featured_desc ?></p>
+                        <a href="#" class="stretched-link">Continue reading</a>
                     </div>
                     <div class="col-auto d-none d-lg-block">
                         <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
