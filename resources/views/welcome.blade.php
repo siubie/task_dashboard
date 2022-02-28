@@ -61,8 +61,8 @@
                             <path d="M21 21l-5.2-5.2" />
                         </svg>
                     </a>
-                    <a class="btn btn-sm btn-outline-secondary" href="#">Login</a>
-                    <a class="btn btn-sm btn-outline-secondary" href="#">Register</a>
+                    <a class="btn btn-sm btn-outline-secondary" href="/login">Login</a>
+                    <a class="btn btn-sm btn-outline-secondary" href="/register">Register</a>
                 </div>
             </div>
         </header>
