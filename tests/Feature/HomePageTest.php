@@ -51,13 +51,13 @@ class HomePageTest extends TestCase
         $response->assertSee("ini content featured post 1 dari controller");
     }
 
-    public function test_featured_post2_detail_shown_correctly()
-    {
-        $response = $this->get('/news/featured/2');
+    // public function test_featured_post2_detail_shown_correctly()
+    // {
+    //     $response = $this->get('/news/featured/2');
 
-        $response->assertStatus(200);
-        //content featured post 2
-        $response->assertSee("Ini judul featured post 2");
-        $response->assertSee("ini content featured post 2 dari controller");
-    }
+    //     $response->assertStatus(200);
+    //     //content featured post 2
+    //     $response->assertSee("Ini judul featured post 2");
+    //     $response->assertSee("ini content featured post 2 dari controller");
+    // }
 }
