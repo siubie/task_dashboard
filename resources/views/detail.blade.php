@@ -61,8 +61,7 @@
                             <path d="M21 21l-5.2-5.2" />
                         </svg>
                     </a>
-                    <a class="btn btn-sm btn-outline-secondary" href="#">Login</a>
-                    <a class="btn btn-sm btn-outline-secondary" href="#">Register</a>
+                    <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
                 </div>
             </div>
         </header>
@@ -90,8 +89,7 @@
             <div class="col-md-6 px-0">
                 <h1 class="display-4 fst-italic">{{ $judul }}</h1>
                 <p class="lead my-3">{{ $deskripsi }}</p>
-                <p class="lead mb-0"><a href="/news/hero-post-detail" class="text-white fw-bold">Continue
-                        reading...</a></p>
+                <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a></p>
             </div>
         </div>
 
@@ -101,10 +99,11 @@
                     class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">
                         <strong class="d-inline-block mb-2 text-primary">World</strong>
-                        <h3 class="mb-0">{{ $post1['judul'] }}</h3>
+                        <h3 class="mb-0">Featured post</h3>
                         <div class="mb-1 text-muted">Nov 12</div>
-                        <p class="card-text mb-auto">{{ $post1['isi'] }}</p>
-                        <a href="/news/featured/{{ $post1['id'] }}" class="stretched-link">Continue reading</a>
+                        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
+                            lead-in to additional content.</p>
+                        <a href="#" class="stretched-link">Continue reading</a>
                     </div>
                     <div class="col-auto d-none d-lg-block">
                         <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
@@ -123,10 +122,11 @@
                     class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">
                         <strong class="d-inline-block mb-2 text-success">Design</strong>
-                        <h3 class="mb-0">{{ $post2['judul'] }}</h3>
+                        <h3 class="mb-0">Post title</h3>
                         <div class="mb-1 text-muted">Nov 11</div>
-                        <p class="mb-auto">{{ $post2['isi'] }}</p>
-                        <a href="/news/featured/{{ $post2['id'] }}" class="stretched-link">Continue reading</a>
+                        <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in
+                            to additional content.</p>
+                        <a href="#" class="stretched-link">Continue reading</a>
                     </div>
                     <div class="col-auto d-none d-lg-block">
                         <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
