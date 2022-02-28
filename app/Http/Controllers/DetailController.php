@@ -21,5 +21,19 @@ class DetailController extends Controller
         $url = url('/news/hero-post-detail');
         return view('welcome', compact('tittle', 'desc', 'url'));
     }
+
+    public function featured($id){
+
+
+        if($id == 1){
+            $tittle = "Ini judul featured post 1";
+            $desc = "ini content featured post 1 dari controller";
+        }else if($id == 2){
+            $tittle = "Ini judul featured post 2";
+            $desc = "ini content featured post 2 dari controller";
+        }
+        $url = url('/news/featured/' . $id);
+        return view('welcome', compact('tittle' , 'desc' , 'url'));
+    }
 }
 
