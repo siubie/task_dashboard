@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('/', [DetailController::class, 'index']);
 Route::get('/news/hero-post-detail', [App\Http\Controllers\DetailController::class, 'show'])->name('detail');
+Route::get('/news/featured/{id}', [App\Http\Controllers\DetailController::class, 'featured']);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
