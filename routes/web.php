@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\WelcomeController;
+use App\Http\Controllers\DetailController;
+use App\Http\Controllers\FeaturedController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,9 +17,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',[WelcomeController::class,'welcome']);
+Route::get('/news/hero-post-detail',[DetailController::class,'detailPage']);
+Route::get('/news/featured/{id}',[FeaturedController::class,'featured']);
 
 Auth::routes();
 
