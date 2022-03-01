@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -13,7 +13,10 @@
 
 
     <!-- Bootstrap core CSS -->
-<link href="/css/bootstrap.min.css" rel="stylesheet">
+{{-- <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet"> --}}
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/blog.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
 
     <style>
       .bd-placeholder-img {
@@ -23,7 +26,6 @@
         -moz-user-select: none;
         user-select: none;
       }
-
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
@@ -35,7 +37,7 @@
     <!-- Custom styles for this template -->
     <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="/css/blog.css" rel="stylesheet">
+    {{-- <link href="blog.css" rel="stylesheet"> --}}
   </head>
   <body>
 
@@ -52,7 +54,8 @@
         <a class="link-secondary" href="#" aria-label="Search">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
         </a>
-        <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+        <a href="{{route('login')}}" class="btn btn-sm">Login</a>
+        <a class="btn btn-sm btn-outline-secondary" href="{{route('register')}}">Register</a>
       </div>
     </div>
   </header>
@@ -78,9 +81,9 @@
 <main class="container">
   <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
     <div class="col-md-6 px-0">
-        <h1 class="display-4 fst-italic">{{$tittle}}</h1>
-        <p class="lead my-3">{{$desc}}</p>
-        <p class="lead mb-0"><a href="{{$url}}" class="text-white fw-bold">Continue reading...</a></p>
+      <h1 class="display-4 fst-italic">{{$tittle}}</h1>
+      <p class="lead my-3">{{$desc}}</p>
+      <p class="lead mb-0"><a href="{{$url}}" class="text-white fw-bold">Continue reading...</a></p>
     </div>
   </div>
 
@@ -290,6 +293,8 @@
     <a href="#">Back to top</a>
   </p>
 </footer>
+
+
 
   </body>
 </html>
