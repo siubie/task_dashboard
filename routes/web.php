@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RootController;
+use App\Http\Controllers\DetailController;
+use App\Http\Controllers\FeaturedController;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +18,11 @@ use App\Http\Controllers\RootController;
 |
 */
 
+// root
 Route::get('/',[RootController::class,'index']);
+// news
+Route::get('/news/hero-post-detail',[DetailController::class,'detailPage']);
+Route::get('/news/featured/{id}',[FeaturedController::class,'featured']);
 
 
 Auth::routes();
