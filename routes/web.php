@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\PageDetailController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', [PageController::class, 'index']);
-Route::get('/news/hero-post-detail', [PageController::class, 'show'])->name('detail');
+Route::get('/news/hero-post-detail', [PageDetailController::class, 'detail'])->name('detail');
 Route::get('/news/featured/{id}', [PageController::class, 'featured']);
 
 Auth::routes();
