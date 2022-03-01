@@ -10,10 +10,11 @@
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/blog/">
 
-    
+
 
     <!-- Bootstrap core CSS -->
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap.css') }}">
 
     <style>
       .bd-placeholder-img {
@@ -31,14 +32,14 @@
       }
     </style>
 
-    
+
     <!-- Custom styles for this template -->
     <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="blog.css" rel="stylesheet">
   </head>
   <body>
-    
+
 <div class="container">
   <header class="blog-header py-3">
     <div class="row flex-nowrap justify-content-between align-items-center">
@@ -77,10 +78,10 @@
 
 <main class="container">
   <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
-    <div class="col-md-6 px-0">
-      <h1 class="display-4 fst-italic">Title of a longer featured blog post</h1>
-      <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
-      <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a></p>
+       <div class="col-md-6 px-0">
+      <h1 class="display-4 fst-italic">{{ $title }}</h1>
+      <p class="lead my-3">{{ $desc }}</p>
+      <p class="lead mb-0"><a href="{{ $url }}" class="text-white fw-bold">Continue reading...</a></p>
     </div>
   </div>
 
@@ -91,7 +92,7 @@
           <strong class="d-inline-block mb-2 text-primary">World</strong>
           <h3 class="mb-0">Featured post</h3>
           <div class="mb-1 text-muted">Nov 12</div>
-          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text mb-auto">ini content featured post 1 dari controller</p>
           <a href="#" class="stretched-link">Continue reading</a>
         </div>
         <div class="col-auto d-none d-lg-block">
@@ -106,7 +107,7 @@
           <strong class="d-inline-block mb-2 text-success">Design</strong>
           <h3 class="mb-0">Post title</h3>
           <div class="mb-1 text-muted">Nov 11</div>
-          <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+          <p class="mb-auto">ini content featured post 2 dari controller</p>
           <a href="#" class="stretched-link">Continue reading</a>
         </div>
         <div class="col-auto d-none d-lg-block">
@@ -292,6 +293,6 @@
 </footer>
 
 
-    
+
   </body>
 </html>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BlogController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,9 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 #Mengontrol route via controller
-Route::get('/', [DetailController::class, 'index']);
-Route::get('/news/hero-post-detail', [App\Http\Controllers\DetailController::class, 'show']);
-Route::get('/news/featured/{id}', [App\Http\Controllers\DetailController::class, 'featured']);
+Route::get('/', [BlogController::class, 'index']);
+Route::get('/news/hero-post-detail', [BlogController::class, 'detail']);
+Route::get('/news/featured/{id}', [BlogController::class, 'feature']);
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index']);
