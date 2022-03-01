@@ -24,8 +24,8 @@ class PageController extends Controller
 
     public function featured(int $id)
     {
-        $title = $id == 1 ? 'Ini judul featured post 1' : 'Ini judul featured post 2';
-        $desc  = $id == 1 ? 'ini content featured post 1 dari controller' : 'ini content featured post 2 dari controller';
+        $title = 'Ini judul featured post ' . $id;
+        $desc = "ini content featured post {$id} dari controller";
         $url   = url('/news/featured/' . $id);
         return view('index', compact('title', 'desc', 'url'));
     }

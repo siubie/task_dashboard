@@ -97,7 +97,7 @@
           <h3 class="mb-0">Ini judul featured post 1</h3>
           <div class="mb-1 text-muted">Nov 12</div>
           <p class="card-text mb-auto">ini content featured post 1 dari controller</p>
-          <a href="#" class="stretched-link">Continue reading</a>
+          <a href="{{ url('/news/featured/1') }}" class="stretched-link">Continue reading</a>
         </div>
         <div class="col-auto d-none d-lg-block">
           <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
@@ -112,7 +112,7 @@
           <h3 class="mb-0">Ini judul featured post 2</h3>
           <div class="mb-1 text-muted">Nov 11</div>
           <p class="mb-auto">ini content featured post 2 dari controller</p>
-          <a href="#" class="stretched-link">Continue reading</a>
+          <a href="{{ url('/news/featured/2') }}" class="stretched-link">Continue reading</a>
         </div>
         <div class="col-auto d-none d-lg-block">
           <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
