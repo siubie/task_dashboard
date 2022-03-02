@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BlogController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,7 +13,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+#Mengontrol route via controller
+Route::get('/', [BlogController::class, 'index']);
+Route::get('/news/hero-post-detail', [BlogController::class, 'detail']);
+Route::get('/news/featured/{id}', [BlogController::class, 'featured']);
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index']);
