@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 #Mengontrol route via controller
 Route::get('/', [BlogController::class, 'index']);
 Route::get('/news/hero-post-detail', [BlogController::class, 'detail']);
-Route::get('/news/featured/{id}', [BlogController::class, 'feature']);
+Route::get('/news/featured/{id}', [BlogController::class, 'featured']);
 
 Auth::routes();
 
