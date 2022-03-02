@@ -1,6 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\RootController;
+use App\Http\Controllers\DetailController;
+use App\Http\Controllers\FeaturedController;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +18,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// root
+Route::get('/',[RootController::class,'index']);
+// news
+Route::get('/news/hero-post-detail',[DetailController::class,'detailPage']);
+Route::get('/news/featured/{id}',[FeaturedController::class,'featured']);
+
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
