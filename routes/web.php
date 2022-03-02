@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\DetailController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,9 +15,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [DetailController::class, 'index']);
+
+Route::get('/news/featured/{id}', [App\HttpController\DetailController::class, 'featured']);
+
+Route::get('/news/hero-post-detail', [App\Http\Controller\DetailController::class, 'show'])->name('detail');
 
 Auth::routes();
 
