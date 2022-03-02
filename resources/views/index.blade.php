@@ -90,7 +90,7 @@
       <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div class="col p-4 d-flex flex-column position-static">
           <strong class="d-inline-block mb-2 text-primary">World</strong>
-          <h3 class="mb-0">ini judul dari post 1</h3>
+          <h3 class="mb-0">ini judul featured post 1</h3>
           <div class="mb-1 text-muted">Nov 12</div>
           <p class="card-text mb-auto">ini content featured post 1 dari controller</p>
           <a href="{{ url('/news/featured/1') }}" class="stretched-link">Continue reading</a>
@@ -105,7 +105,7 @@
       <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div class="col p-4 d-flex flex-column position-static">
           <strong class="d-inline-block mb-2 text-success">Design</strong>
-          <h3 class="mb-0">Ini judul featured post</h3>
+          <h3 class="mb-0">Ini judul featured post2</h3>
           <div class="mb-1 text-muted">Nov 11</div>
           <p class="mb-auto">ini content featured post 2 dari controller</p>
           <a href="{{ url('/news/featured/2') }}" class="stretched-link">Continue reading</a>
