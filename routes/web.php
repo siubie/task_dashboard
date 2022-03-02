@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\HeroController;
+use App\Http\Controllers\HeroDetailController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +15,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [HeroController::class, 'index']);
+Route::get('/news/hero-post-detail', [HeroDetailController::class, 'detail']);
+Route::get('/news/featured/{id}', [HeroDetailController::class, 'featured']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
