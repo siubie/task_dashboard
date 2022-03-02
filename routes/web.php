@@ -1,6 +1,10 @@
 <?php
 
+use App\Http\Controllers\DetailController;
+use App\Http\Controllers\FeaturedController;
+use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +17,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+//main area
+
+Route::get('/', [WelcomeController::class, 'welcome']);
+
+Route::get('/news/hero-post-detail', [DetailController::class, 'detail']);
+
+Route::get('/news/featured/{id}', [FeaturedController::class, 'feature']);
+
+//main area
+
+//cek php
+Route::get('/test', function () {
+    phpinfo();
 });
+
+//Route untuk login/register
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
