@@ -15,7 +15,7 @@
     <!-- Bootstrap core CSS -->
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/app.css') }}">
-
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/bootstrap.min.css') }}">
 
 
     <style>
@@ -38,7 +38,7 @@
     <!-- Custom styles for this template -->
     <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="blog.css" rel="stylesheet">
+    <link href="css/blog.css" rel="stylesheet">
   </head>
   <body>
 
