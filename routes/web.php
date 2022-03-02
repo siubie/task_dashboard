@@ -22,9 +22,9 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/', [HomepageController::class, 'Homepage']);
+Route::get('/', [HomepageController::class, 'homepage']);
 
 Route::get('/news/hero-post-detail', [DetailController::class, 'detail']);
 
-Route::get('/news/featured/{id}', [FeaturedController::class, 'featured']);
+Route::get('/news/featured/{id}', [FeaturedController::class, 'feature']);
 
