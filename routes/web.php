@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\BerandaController;
+use App\Http\Controllers\NewsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +15,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', [BerandaController::class, 'index']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::prefix('news')->group(function () {
+    Route::get('/hero-post-detail', [NewsController::class, 'detail']);
+    Route::get('/featured/{id}', [NewsController::class, 'featured']);
 });
